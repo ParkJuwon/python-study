@@ -1,0 +1,5 @@
+# 모듈
+## Q1
+from calculator import Calculator
+cal1 = Calculator([1,2,3,4,5])
+print(cal1.sum())
