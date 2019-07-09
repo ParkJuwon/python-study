@@ -45,18 +45,18 @@ def friends_of_friend_ids(user):
                    if not_the_same(user, foaf)    # who aren't me
                    and not_friends(user, foaf)) 
 
-print friends_of_friend_ids(users[3])
-
-v = (foaf["id"]
-    for friend in user["friends"]  # for each of my friends
-    for foaf in friend["friends"]  # count *their* friends
-    if not_the_same(user, foaf)    # who aren't me
-    and not_friends(user, foaf))
-
-
-def other( x ,y,z):
-    print x, y, z
-    return x+ y +z
-x_ylit= [1,2,3,4]
-z_dic={ }
-print other(*x_ylit,**z_dic )
+# print friends_of_friend_ids(users[3])
+#
+# v = (foaf["id"]
+#     for friend in user["friends"]  # for each of my friends
+#     for foaf in friend["friends"]  # count *their* friends
+#     if not_the_same(user, foaf)    # who aren't me
+#     and not_friends(user, foaf))
+#
+#
+# def other( x ,y,z):
+#     print x, y, z
+#     return x+ y +z
+# x_ylit= [1,2,3,4]
+# z_dic={ }
+# print other(*x_ylit,**z_dic )

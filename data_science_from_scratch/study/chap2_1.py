@@ -2,7 +2,7 @@
 
 from __future__ import division # 5/2 = 2.5가 되게 해주는 
 
-
+'''
 for i in [1,2,3,4,5]:
     print i
     for j in [1,2,3,4,5]:
@@ -618,4 +618,4 @@ def doubler_correct(f):
 g = doubler_correct(f2)
 print g(1, 2)
 
-
+'''
