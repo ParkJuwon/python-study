@@ -102,3 +102,6 @@ Datetime 포맷 규칙
 """
 print(dt.strftime('%F'))
 
+time = 1463460958
+x = datetime.fromtimestamp(time)
+print(x.strftime('%Y-%m-%d %H:%M:%S'))
