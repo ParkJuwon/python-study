@@ -6,7 +6,7 @@ import math
 넷플릭스는 내가 보고 싶어할 법한 영화를 추천해주며
 아마존은 사고 싶어할 법한 제품을 추천해준다.
 트위터는 팔로우하고 싶어할 만한 사용자들을 추천해 준다.
-전에 사용했던 user_interests 데이터에서 추천 시스템 방법론을 몇가지 적
+전에 사용했던 user_interests 데이터에서 추천 시스템 방법론을 몇가지 적용
 '''
 
 users_interests = [
@@ -228,4 +228,4 @@ def item_based_suggestions(user_id, include_current_interests=False):
 				if suggestion not in users_interests[user_id]]
 
 
-item_based_suggestions(0)
+print(item_based_suggestions(0))
