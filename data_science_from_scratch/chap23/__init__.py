@@ -239,7 +239,6 @@ print()
 # SELECT LENGTH(name) AS name_length FROM users;
 def name_length(row): return len(row['name'])
 
-
 print(users.select(keep_columns=[], additional_columns={'name_length': name_length}))
 print()
 
@@ -353,7 +352,7 @@ user_interests를 생성해서 user_ids와 관심사 사이에 1:N 관계를 성
 CREATE TABLE user_interests (
 	user_id INT NOT NULL,
 	interest VARCHAR(100) NOT NULL
-)
+);
 '''
 user_interests = Table(["user_id", "interest"])
 user_interests.insert([0, "SQL"])
